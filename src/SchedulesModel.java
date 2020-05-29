@@ -18,6 +18,9 @@ public class SchedulesModel{
         this.Duration = Duration;
     }
 
+    public SchedulesModel() {
+    }
+
     public int getDuration() {
         return Duration;
     }
@@ -66,15 +69,4 @@ public class SchedulesModel{
         RepetitionInMinutes = repetitionInMinutes;
     }
 
-    @Override
-    public String toString() {
-        return "SchedulesModel{" +
-                "SchName='" + SchName + '\'' +
-                ", SchDescription='" + SchDescription + '\'' +
-                ", SchStart=" + SchStart +
-                ", IsRepeat=" + IsRepeat +
-                ", RepetitionInMinutes=" + RepetitionInMinutes +
-                ", Duration=" + Duration +
-                '}';
-    }
 }

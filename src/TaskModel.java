@@ -1,7 +1,10 @@
 import java.util.List;
 
 public class TaskModel {
-    public String TaskName;
+    public TaskModel() {
+    }
+
+public String TaskName;
     public String TaskDescription;
     List<SchedulesModel> Schedules;
 
@@ -35,12 +38,4 @@ public class TaskModel {
         Schedules = schedules;
     }
 
-    @Override
-    public String toString() {
-        return "TaskModel{" +
-                "TaskName='" + TaskName + '\'' +
-                ", TaskDescription='" + TaskDescription + '\'' +
-                ", Schedules=" + Schedules.toString() +
-                '}';
-    }
 }
